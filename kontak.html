@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Website Sekolah - Kontak</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        .contact-form {
+            background-color: #ae9ae4;
+            padding: 30px;
+            border-radius: 5px;
+            align-items: left;
+        }
+
+        .contact-form h2 {
+            text-align: left;
+            margin-bottom: 30px;
+        }
+
+        .contact-form .form-control {
+            border-radius: 0;
+        }
+
+        .contact-form .btn-primary {
+            border-radius: 0;
+        }
+    </style>
+    <style>
+        .footer {
+           background-color: #0c023a;
+           color: #f08686;
+           padding: 30px 0;
+       }
+
+       .footer .container {
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+       }
+
+       .footer ul {
+           list-style: none;
+           margin: 0;
+           padding: 0;
+       }
+
+       .footer ul li {
+           margin-bottom: 10px;
+       }
+
+       .footer ul li a {
+           color: #d6ec11;
+           text-decoration: none;
+       }
+
+       .footer ul li a:hover {
+           text-decoration: underline;
+       }
+   </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" style="background-color: blue;">
+        <a class="navbar-brand" href="#">SMAN 3 PEMATANG SIANTAR</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="website_sekolah.html">Beranda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tentang kami.html">Tentang Kami</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="program studi.html">Program Studi</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="kontak.html">Kontak</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Kontak</h1>
+        <p>Jika Anda memiliki pertanyaan atau ingin menghubungi kami, silakan gunakan salah satu kontak di bawah ini:</p>
+        <ul>
+            <li><strong>Email:</strong> SMAN3P.SIANTAR@YAHOO.COM</li>
+            <li><strong>Telepon:</strong> 082172807739</li>
+            <li><strong>Alamat:</strong> Jl. PANE NO 29 P.SIANTAR</li>
+        </ul>
+        <p>Jangan ragu untuk menghubungi kami. Kami siap membantu Anda!</p>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="contact-form">
+                    <h2>Kontak Kami</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Nama</label>
+                            <input type="text" class="form-control" id="name" placeholder="Masukkan nama Anda">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Masukkan email Anda">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Pesan</label>
+                            <textarea class="form-control" id="message" rows="5" placeholder="Tulis pesan Anda"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Kirim</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container" >
+            <div>
+                <h4>Informasi Kontak</h4>
+                <ul>
+                    <li><a href="#">Alamat: Jl. Contoh No. 123, Kota Anda</a></li>
+                    <li><a href="#">Telepon: 123-456-7890</a></li>
+                    <li><a href="#">Email: info@example.com</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Link Terkait</h4>
+                <ul>
+                    <li><a href="#">Beranda</a></li>
+                    <li><a href="#">Tentang Kami</a></li>
+                    <li><a href="#">Program Studi</a></li>
+                    <li><a href="#">Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#contactForm').submit(function(e) {
+                e.preventDefault(); // Mencegah pengiriman form secara default
+
+                // Tampilkan notifikasi
+                alert('Pesan berhasil dikirim!');
+
+                // Kosongkan input form
+                $('#name').val('');
+                $('#email').val('');
+                $('#message').val('');
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Website Sekolah - Galeri</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    
+    <style>
+         .footer {
+           background-color: #0c023a;
+           color: #f08686;
+           padding: 30px 0;
+       }
+
+       .footer .container {
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+       }
+
+       .footer ul {
+           list-style: none;
+           margin: 0;
+           padding: 0;
+       }
+
+       .footer ul li {
+           margin-bottom: 10px;
+       }
+
+       .footer ul li a {
+           color: #d6ec11;
+           text-decoration: none;
+       }
+
+       .footer ul li a:hover {
+           text-decoration: underline;
+       }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .caption {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 576px) {
+            .gallery {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    </style>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SMAN 3 PEMATANG SIANTAR</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+         .footer {
+            background-color: #0c023a;
+            color: #f08686;
+            padding: 30px 0;
+        }
+
+        .footer .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .footer ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer ul li a {
+            color: #d6ec11;
+            text-decoration: none;
+        }
+
+        .footer ul li a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="website_sekolah.html"  >SMAN 3 PEMATANG SIANTAR</a>
+        <button style="background-color: aqua;" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="website_sekolah.html">Beranda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tentang kami.html">Tentang Kami</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Galeri.html">Galeri</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="program studi.html">Program Studi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="kontak.html">Kontak</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Galeri</h1>
+        <div class="gallery">
+            <div class="image">
+                <a data-toggle="modal" data-target="#imageModal1">
+                    <img src="1.jpg" alt="Gambar 1">
+                </a>
+                <div class="caption">Gerbang Sekolah</div>
+            </div>
+            <div class="image">
+                <a data-toggle="modal" data-target="#imageModal2">
+                    <img src="perpustakaan.jpg" alt="Gambar 2">
+                </a>
+                <div class="caption">Perpustakaan</div>
+            </div>
+            <div class="image">
+                <a data-toggle="modal" data-target="#imageModal3">
+                    <img src="lapangan.jpg" alt="Gambar 3">
+                </a>
+                <div class="caption">lapangan</div>
+            </div>
+            <div class="image">
+                <a data-toggle="modal" data-target="#imageModal3">
+                    <img src="ruangkelas.jpg" alt="Gambar 3">
+                </a>
+                <div class="caption">Ruangan Kelas</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal untuk tampilan gambar lebih besar -->
+    <div class="modal fade" id="imageModal1" tabindex="-1" role="dialog" aria-labelledby="imageModal1Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="imageModal1Label">Gambar 1</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="path/to/image1.jpg" alt="Gambar 1">
+                    <p>Keterangan Gambar 1</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="imageModal2" tabindex="-1" role="dialog" aria-labelledby="imageModal2Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="imageModal2Label">Gambar 2</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="path/to/image2.jpg" alt="Gambar 2">
+                    <p>Keterangan Gambar 2</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="imageModal3" tabindex="-1" role="dialog" aria-labelledby="imageModal3Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="imageModal3Label">Gambar 3</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="path/to/image3.jpg" alt="Gambar 3">
+                    <p>Keterangan Gambar 3</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container" >
+            <div>
+                <h4>Informasi Kontak</h4>
+                <ul>
+                    <li><a href="#">Alamat: Jl.Pane NO.29 P.SIANTAR</a></li>
+                    <li><a href="#">Telepon: 082172807736</a></li>
+                    <li><a href="#">Email: SMAN3SIANTAR@YAHOO.COM</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Link Terkait</h4>
+                <ul>
+                    <li><a href="#">Beranda</a></li>
+                    <li><a href="#">Tentang Kami</a></li>
+                    <li><a href="#">Program Studi</a></li>
+                    <li><a href="#">Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
